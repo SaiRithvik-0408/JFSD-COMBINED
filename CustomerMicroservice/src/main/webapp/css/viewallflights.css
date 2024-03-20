@@ -1,0 +1,27 @@
+/* CSS for the flight schedule table */
+
+.flight-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+.flight-table th, .flight-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.flight-table thead {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.flight-table tbody tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+.flight-table tbody tr:nth-child(even) {
+    background-color: #f1f1f1;
+}

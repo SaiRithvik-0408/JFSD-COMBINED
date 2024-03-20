@@ -1,0 +1,58 @@
+/* Add these styles to your existing CSS file */
+
+/* Styles for the admin container */
+.admin__container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin: 20px;
+}
+
+.blink {
+  animation: blink 1s steps(1, end) infinite;
+}
+
+/* Styles for admin header */
+.admin__container .section__header {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Styles for admin options */
+.admin__options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.admin__options a {
+  display: inline-block;
+  background-color: #49c1a2;
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.admin__options a:hover {
+  background-color: #37a08e;
+  transition: background-color 0.3s ease-in-out;
+  transform: scale(1.05);
+}
+
+/* Add keyframes for fadeIn animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
